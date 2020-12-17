@@ -1,0 +1,2 @@
+#Convert m4a to mp4
+for i in *.m4a; do ffmpeg -i "$i" -c:a copy "${i%.*}.mp4"; done
